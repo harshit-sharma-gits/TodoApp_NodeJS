@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+     
+body {
+    margin: none;
+}
+     
+.container {
+    display: grid;
+    width: 1300px;
+    height: 600px;
+    margin: auto;
+    grid-template-columns: 1000px 300px;
+    grid-template-areas: "formarea completedarea";
+}
+
+.formarea {
+    grid-area: formarea;
+    display: grid;
+    grid-template-columns: 400px 600px;
+    height: 100%;
+    grid-template-areas: "inputarea showarea";
+}
+
+.taskinputarea {
+    background-color: rgb(230, 230, 230);
+    grid-area: inputarea;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.taskshowarea {
+    grid-area: showarea;
+    background-color: rgb(206, 206, 206);
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.completedarea {
+    background-color: rgb(212, 212, 212);
+    grid-area: completedarea;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+h1 {
+    font-size: 30px;
+    color: rgb(32, 32, 32);
+}
+     
+ul {
+    margin: 0;
+    padding: 0;
+}
+     
+button{
+    background: rgb(64,11,153);
+    background: linear-gradient(50deg, rgba(64,11,153,1) 0%, rgba(69,53,173,1) 21%, rgba(0,241,255,1) 100%);
+    border: none;
+    font-size: 17px;
+    color: white;
+    width: 100px;
+    height: 35px;
+}
+
+
+button:hover{
+    background: linear-gradient(50deg, rgba(64,11,153,1) 0%, rgba(69,53,173,1) 50%, rgba(0,241,255,1) 100%);
+}
+
+.remove{
+    background: rgb(64,11,153);
+    background: linear-gradient(50deg, rgba(64,11,153,1) 0%, rgba(69,53,173,1) 21%, rgba(0,241,255,1) 100%);
+    border: none;
+    font-size: 17px;
+    color: white;
+    width: 200px;
+    height: 35px;
+}
+
+
+.remove:hover{
+    background: linear-gradient(50deg, rgba(64,11,153,1) 0%, rgba(69,53,173,1) 50%, rgba(0,241,255,1) 100%);
+}
